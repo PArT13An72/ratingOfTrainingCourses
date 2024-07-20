@@ -1,95 +1,40 @@
-import Image from 'next/image';
-import styles from './page.module.css';
 import React, { JSX } from 'react';
+import { Button, HTag, P, Tag } from '@/components';
+import { Test } from '@/components/test';
 
 const Home = (): JSX.Element => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    <main>
+      <>
+        <Test />
+        <HTag tag={'h3'}>Что тут</HTag>
+        <Button appearance={'primary'} className={'asdasd'} arrow={'right'}>
+          asd
+        </Button>
+        <Button appearance={'ghost'} arrow={'down'}>
+          asd
+        </Button>
+        <P size={'large'}>
+          Dfa skfa;l sd;a s;jd a;sj dkjqoivhioxchviu gisuadg fgus uiagfg
+          uasiugdfg uiaegwlkj gkjbcxvz v asd asd qopwjf pjaspfj iopajf
+          iopsjvzio; jzsj pfjpwjefr j[je[awpf ojop[zxcjvop jzxcov jp
+        </P>
+        <Tag size={'large'} color={'green'}>
+          -10 000 ₽
+        </Tag>
+        <Tag size={'standard'} color={'red'}>
+          -10 000 ₽
+        </Tag>
+        <Tag size={'standard'} color={'purple'}>
+          -10 000 ₽
+        </Tag>
+        <Tag size={'standard'} color={'ghost'}>
+          -10 000 ₽
+        </Tag>
+        <Tag size={'large'} color={'red'} href={'https://google.com'}>
+          ASddsa 5%
+        </Tag>
+      </>
     </main>
   );
 };
