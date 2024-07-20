@@ -30,8 +30,8 @@
     }
   },
   "include": [
-    "next-env-custom.d.ts",
     "svg.d.ts",
+    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
