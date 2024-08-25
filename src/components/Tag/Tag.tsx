@@ -19,7 +19,6 @@ export const Tag = ({
         [styles.green]: color === 'green',
         [styles.red]: color === 'red',
         [styles.purple]: color === 'purple',
-        [styles.href]: href,
       })}
     >
       {href ? <a href={href}>{children}</a> : <>{children}</>}
