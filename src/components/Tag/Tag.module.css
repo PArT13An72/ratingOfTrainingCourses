@@ -22,6 +22,11 @@
   color: inherit;
 }
 
+.tag a:hover {
+  cursor: pointer;
+  color: var(--gray-light);
+}
+
 .standard {
   font-size: 12px;
   line-height: 12px;
@@ -60,8 +65,4 @@
 .purple {
   color: var(--purple);
   border: 1px solid var(--purple);
-}
-
-.href:hover {
-  cursor: pointer;
 }

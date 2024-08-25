@@ -1,8 +1,8 @@
 import React, { JSX } from 'react';
-import { ButtonProps } from './Button.props';
-import styles from './Button.module.css';
 import cn from 'classnames';
+import { ButtonProps } from './Button.props';
 import ArrowIcon from './arrow.svg';
+import styles from './Button.module.css';
 
 export const Button = ({
   children,

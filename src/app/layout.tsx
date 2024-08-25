@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Noto_Sans } from 'next/font/google';
 import './globals.css';
 import React, { JSX } from 'react';
+import { Footer, Header, Sidebar } from '@/layout';
+import styles from './layout.module.css';
 
 const notoSans = Noto_Sans({
   subsets: ['cyrillic', 'latin'],
@@ -18,8 +20,13 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>): JSX.Element => (
-  <html lang="ru">
-    <body className={notoSans.className}>{children}</body>
+  <html lang="ru" className={notoSans.className}>
+    <body className={styles.wrapper}>
+      <Header className={styles.header} />
+      <Sidebar className={styles.sidebar} />
+      <main className={styles.main}>{children}</main>
+      <Footer className={styles.footer} />
+    </body>
   </html>
 );
 
